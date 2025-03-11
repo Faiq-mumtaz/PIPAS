@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f8f6;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007a4d;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.promo-bar {
+    background: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.hero {
+    background: #007a4d;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.hero .badge {
+    background: #c1f2dc;
+    color: #007a4d;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.hero h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.hero img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.main-button {
+    background: #007a4d;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.info-section {
+    padding: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.info-card h3 {
+    margin-bottom: 5px;
+}
+
+.info-card a {
+    color: #007a4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* kalkulator */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.required {
+    color: red;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group input {
+    flex: 1;
+}
+
+.unit {
+    padding: 10px;
+    background: #e9e9e9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.info-text {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+.result-container {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    text-align: left;
+}
+
+.result-container label {
+    font-weight: bold;
+}
+
+.result-container select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#hasilKarbon {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn-secondary, .btn-primary {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 48%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-secondary {
+    background: white;
+    color: #007a5a;
+    border: 2px solid #007a5a;
+}
+
+.btn-primary {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    background: #007a5a;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #e6f2ed;
+}
+
+.btn-primary:hover {
+    background: #005a4e;
+}
+
+/* lobby */
+.kategori-container {
+    text-align: left;
+    margin: 20px;
+}
+
+.kategori-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.kategori-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kategori-item:hover {
+    background-color: #f0f0f0;
+}
+
+.kategori-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}

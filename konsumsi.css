@@ -1,0 +1,84 @@
+/* Reset dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Kontainer utama */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Judul */
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Label */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Dropdown provinsi */
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling khusus untuk dropdown */
+select {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Tombol */
+button {
+    width: 48%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#hitung {
+    background-color: #28a745;
+    color: white;
+}
+
+#reset {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Hover efek */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Hasil jejak karbon */
+#hasilKarbon {
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+}

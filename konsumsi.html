@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Jejak Karbon</title>
+    <link rel="stylesheet" href="konsumsi.css">
+    <script src="konsumsi.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <a href="lobby.html"><h2>← Kembali</h2></a>
+        <h3>Penggunaan Listrik Wilayah</h3>
+
+        <form id="carbon-form">
+            <label for="jaringan-listrik">Jaringan Listrik *</label>
+            <select id="jaringan-listrik" name="jaringan-listrik" required>
+                <option value="" disabled selected>Pilih Wilayah</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Jawa Barat">Jawa Barat</option>
+                <option value="Jawa Tengah">Jawa Tengah</option>
+                <option value="Jawa Timur">Jawa Timur</option>
+                <option value="Madura">Madura</option>
+                <option value="Sumatera">Sumatera</option>
+                <option value="Kalimantan">Kalimantan</option>
+                <option value="Sulawesi">Sulawesi</option>
+                <option value="Papua">Papua</option>
+            </select>
+
+            <label for="batas-daya">Batas Daya *</label>
+            <input type="number" id="batas-daya" name="batas-daya" placeholder="Masukkan batas daya (VA)" required>
+
+            <p class="info">Kalkulasi sesuai dengan buku IPCC dan jurnal ilmiah pendukung.</p>
+
+            <div class="result-container">
+                <label for="periode">Jejak Karbonmu</label>
+                <select id="periode" onchange="ubahPeriode()">
+                    <option value="harian">Harian</option>
+                    <option value="bulanan">Bulanan</option>
+                    <option value="tahunan">Tahunan</option>
+                </select>
+                <p id="hasilKarbon">0.00 Ton CO₂</p>
+            </div>
+
+            <div class="button-container">
+                <button type="button" class="btn-primary" id="hitung">Hitung</button>
+                <button type="button" id="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

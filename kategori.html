@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Jejak Karbon</title>
+    <link rel="stylesheet" href="kalkulator.css">
+    <script src="kalkulator.js" defer></script>
+</head>
+<body>
+
+
+    <div class="container">
+        <a href="lobby.html" class="back-button">← Kembali</a>
+
+        <h2>Peralatan Listrik</h2>
+
+        <label for="perangkat">Jenis Peralatan Listrik <span class="required">*</span></label>
+        <select id="perangkat">
+            <option value="dispenser">Dispenser</option>
+            <option value="kipas">Kipas Angin</option>
+            <option value="komputer">Komputer</option>
+            <option value="kulkas">Kulkas</option>
+            <option value="laptop">Laptop</option>
+            <option value="ricecooker">Rice Cooker</option>
+            <option value="televisi">Televisi</option>
+        </select>
+
+        <label for="jumlah">Jumlah Satuan <span class="required">*</span></label>
+        <div class="input-group">
+            <input type="number" id="jumlah" placeholder="Masukkan jumlah" min="1">
+            <span class="unit">Unit</span>
+        </div>
+
+        <label for="lama">Lama Penggunaan <span class="required">*</span></label>
+        <div class="input-group">
+            <input type="number" id="lama" placeholder="Jam per hari" min="1">
+            <span class="unit">Jam/Hari</span>
+        </div>
+
+        <p class="info-text">Kalkulasi yang digunakan kami sesuaikan dengan buku IPCC dan jurnal-jurnal ilmiah pendukung</p>
+
+        <div class="result-container">
+            <label for="periode">Jejak Karbonmu</label>
+            <select id="periode" onchange="ubahPeriode()">
+                <option value="harian">Harian</option>
+                <option value="bulanan">Bulanan</option>
+                <option value="tahunan">Tahunan</option>
+            </select>
+            <p id="hasilKarbon">0.00 Ton CO₂</p>
+        </div>
+
+        <div class="button-container">
+            <button class="btn-primary" onclick="hitungKarbon()">Jumlah</button>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+</body>
+</html>
